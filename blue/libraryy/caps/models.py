@@ -7,14 +7,6 @@ class User(AbstractUser):
     date_joined = models.DateTimeField(auto_now_add=True)
     is_staff = models.BooleanField(default=False)
     
-    """
-    username
-    first_name
-    last_name
-    email
-    
-    """
-    
     
 class Book(models.Model):
     title = models.CharField(max_length=100)
